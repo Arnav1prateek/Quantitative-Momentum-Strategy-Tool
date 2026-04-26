@@ -1,0 +1,30 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "quant-momentum-strategy-tool"
+version = "1.0.0"
+description = "Equity momentum screener with Yahoo Finance data, technical analysis, and Excel reporting."
+readme = "README.md"
+requires-python = ">=3.10"
+authors = [{ name = "Arnav Prateek" }]
+dependencies = [
+  "pandas>=2.1",
+  "numpy>=1.26",
+  "yfinance>=0.2.40",
+  "openpyxl>=3.1",
+  "XlsxWriter>=3.2",
+  "streamlit>=1.34",
+  "plotly>=5.22",
+]
+
+[project.optional-dependencies]
+dev = ["pytest>=8.0"]
+
+[project.scripts]
+quant-momentum = "quant_momentum.cli:main"
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["."]
