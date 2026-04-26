@@ -5,7 +5,6 @@ A polished Python project for screening equities with a rules-based momentum str
 ## Why this project stands out
 
 - **End-to-end quant workflow:** universe selection, market data ingestion, indicator engineering, ranking, signal generation, and reporting.
-- **Interview-friendly design:** modular package structure, typed functions, tests, CLI entry point, and a Streamlit dashboard.
 - **Transparent methodology:** every score is derived from explainable metrics such as risk-adjusted return, RSI, Bollinger Band position, drawdown, and trend strength.
 - **Stakeholder-ready output:** generates an Excel report with summary sheets, signal tables, formatting, and charts.
 
